@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #d2d4d9;
+}
+
+.navbar {
+    background-color: #1E88E5;
+}
+
+main.flex-fill {
+    flex: 1;
+}
+
+.text-blue {
+    color: #1E88E5;
+}
+
+.btn-blue {
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+}
+
+.btn-blue:hover {
+    background-color: #156fc1;
+}
+
+.table thead {
+    background-color: #1E88E5;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer.footer {
+    background-color: #1E88E5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
