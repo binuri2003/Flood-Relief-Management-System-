@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relief Request Form</title>
-
+    <title>Flood Relief Request Form</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="request_form.css">
 </head>
 <body>
     <div class="container py-5">
         <h2 class="text-center mb-4">Flood Relief Request Form</h2>
-        <form id="reliefForm">
+
+        <form id="reliefForm" action="request_form.php" method="POST" onsubmit="return validateForm();">
+
+            <input type="hidden" name="requestID" id="requestID" value="123">
 
             <div class="card mb-4">
-                <div class="card-header bg-light text-primary fw-bold">
-                    User Information
-                </div>
+                <div class="card-header">User Information</div>
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="userID" class="form-label">User ID *</label>
-                        <input type="text" class="form-control" id="userID" name="userID" required>
+                        <input type="number" class="form-control" id="userID" name="userID" required>
                     </div>
                     <div class="mb-3">
                         <label for="userName" class="form-label">Name *</label>
@@ -31,9 +31,7 @@
             </div>
 
             <div class="card mb-4">
-                <div class="card-header bg-light text-primary fw-bold">
-                    Household Details
-                </div>
+                <div class="card-header">Household Details</div>
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="contactPerson" class="form-label">Contact Person Name *</label>
@@ -59,18 +57,16 @@
             </div>
 
             <div class="card mb-4">
-                <div class="card-header bg-light text-primary fw-bold">
-                    Relief & Location Details
-                </div>
+                <div class="card-header">Relief & Location Details</div>
                 <div class="card-body">
                     <div class="mb-3">
                         <label class="form-label">Type of Relief *</label>
-                        <select class="form-select" id="reliefType" required>
+                        <select class="form-select" id="reliefType" name="reliefType" required>
                             <option value="">Select Relief Type</option>
-                            <option value="food">Food</option>
-                            <option value="water">Water</option>
-                            <option value="medicine">Medicine</option>
-                            <option value="shelter">Shelter</option>
+                            <option value="Food">Food</option>
+                            <option value="Water">Water</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Shelter">Shelter</option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -88,15 +84,15 @@
 
                     <label class="form-label">Flood Level *</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="floodLevel" id="low" value="low" required>
+                        <input class="form-check-input" type="radio" name="floodLevel" id="low" value="Low" required>
                         <label class="form-check-label" for="low">Low</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="floodLevel" id="medium" value="medium">
+                        <input class="form-check-input" type="radio" name="floodLevel" id="medium" value="Medium">
                         <label class="form-check-label" for="medium">Medium</label>
                     </div>
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="floodLevel" id="high" value="high">
+                        <input class="form-check-input" type="radio" name="floodLevel" id="high" value="High">
                         <label class="form-check-label" for="high">High</label>
                     </div>
 
@@ -108,22 +104,18 @@
             </div>
 
             <div class="mb-3 text-center">
-                <button type="submit" id="submitBtn" class="btn me-2">Submit</button>
-                
+                <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
             </div>
+
         </form>
     </div>
-<footer class="footer mt-5">
-    <div class="container">
-        <p class="mb-0">
-            © 2026 FloodSafe
-        </p>
-        
-    </div>
-</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 FloodSafe</p>
+        </div>
+    </footer>
+
     <script src="request_form.js"></script>
 </body>
 </html>
-

@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="request_history.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand text-white fw-bold">
-            Flood Relief System
-        </a>
+        <a class="navbar-brand text-white fw-bold">Flood Relief System</a>
         <div class="ms-auto">
-            <a href="request_form.html" class="btn btn-light fw-semibold">
-                Make Request
-            </a>
+            <a href="request_form.html" class="btn btn-light fw-semibold">Make Request</a>
         </div>
     </div>
 </nav>
@@ -27,34 +22,30 @@
 <main class="flex-fill">
     <div class="container my-5">
 
-        <h2 class="text-center mb-4 text-blue">
-            Your Previous Relief Requests
-        </h2>
+        <h2 class="text-center mb-4 text-blue">Your Previous Relief Requests</h2>
 
         <div class="mb-4">
-            <label for="userIDInput" class="form-label fw-semibold text-blue">
-                Enter Your User ID:
-            </label>
+            <label for="userIDInput" class="form-label fw-semibold text-blue">Enter Your User ID:</label>
             <input type="number" id="userIDInput" class="form-control" placeholder="User ID">
-            <button class="btn btn-blue mt-2" onclick="loadRequestHistory()">
-                Load History
-            </button>
+            <button class="btn btn-blue mt-2" onclick="loadRequestHistory()">Load History</button>
         </div>
 
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
+                    <th>User ID</th>
                     <th>Request ID</th>
                     <th>Relief Type</th>
                     <th>Contact Name</th>
                     <th>Contact Number</th>
                     <th>Severity Level</th>
-                    <th>Name of Family Members</th>
+                    <th>Numbers of Family Members</th>
+                    <th>Address</th>
                     <th>Description</th>
+                    <th>Manage</th> 
                 </tr>
             </thead>
-            <tbody id="requestHistoryBody">
-            </tbody>
+            <tbody id="requestHistoryBody"></tbody>
         </table>
 
     </div>
@@ -66,7 +57,6 @@
     </div>
 </footer>
 
-<script src="request_histroy.js"></script>
+<script src="request_history.js"></script>
 </body>
 </html>
-
