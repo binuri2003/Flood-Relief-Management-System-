@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Safe - Login</title>
+    <link rel="stylesheet" href="Flood relief management system.css">
+    <script src="Flood relief management system.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <div id="notification-box" style="display:none; background-color: #e3f2fd; color: #1E88E5; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-weight: bold; border: 1px solid #1E88E5; text-align: center; font-size: 14px;">
+            Account successfully created! Please log in to stay connected.
+        </div>
+
+        <div id="error-box" style="display:none; background-color: #ffebee; color: #c62828; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-weight: bold; border: 1px solid #c62828; text-align: center; font-size: 14px;">
+            This username and password is not in the system, please register.
+        </div>
+
+        <img src="help-logo.png" class="form-logo" alt="Logo">
+        <h1 class="system-title">Flood Safe</h1>
+        <p class="safe-text">STAY CONNECTED WITH US</p>
+        
+        <form action="../Back End/login_process.php" method="POST">
+            <div class="input-fields">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login please</button>
+        </form>
+        <p class="footer-text">Don't have an account? <a href="register.html">Register please</a></p>
+    </div>
+</body>
+</html>

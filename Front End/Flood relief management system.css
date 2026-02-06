@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('ripple-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #d2d4d9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 35px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.form-logo { 
+    width: 80px; 
+    margin-bottom: 10px; 
+}
+
+.system-title { 
+    color: #1E88E5; 
+    margin: 0; 
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+.safe-text { 
+    color: #1E88E5; 
+    font-weight: bold; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.form-container p:not(.safe-text) {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-fields input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.input-fields input:focus {
+    outline: none;
+    border-color: #1E88E5;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.2);
+}
+
+.btn {
+    background-color: #1E88E5;
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1565C0;
+}
+
+.footer-text, .bottom-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-text a, .bottom-text a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover, .bottom-text a:hover {
+    text-decoration: underline;
+}

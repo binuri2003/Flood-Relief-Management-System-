@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Safe - Register</title>
+    <link rel="stylesheet" href="Flood relief management system.css">
+    <script src="Flood relief management system.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <div id="duplicate-error" style="display:none; background-color: #ffebee; color: #c62828; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-weight: bold; border: 1px solid #c62828; text-align: center; font-size: 14px;">
+            This username already exists.Try a different username.
+        </div>
+
+        <img src="help-logo.png" class="form-logo" alt="Logo">
+        <h1 class="system-title">Flood Safe</h1>
+        <p class="safe-text">YOU ARE SAFE ON OUR HANDS</p>
+
+        <form action="../Back End/register_process.php" method="POST" onsubmit="return validateAuth()">
+            <div class="input-fields">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="text" name="address" placeholder="Home Address (for rescue)" required>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" id="pass1" name="password" placeholder="Password" required>
+                <input type="password" id="pass2" placeholder="Confirm Password" required>
+            </div>
+            <input type="hidden" name="role" value="User">
+            <button type="submit" class="btn">Reach Me Immediately</button>
+        </form>
+        <p class="footer-text">Already have an account? <a href="login.html">Login please</a></p>
+    </div>
+</body>
+</html>
