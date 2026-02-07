@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(200, 225, 255, 0.85)), 
+                url('floodBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #1a5fd0; 
+    margin-top: 20px;
+}
+
+
+.nav {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #2c7be5; 
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav button:hover {
+    background-color: #1a5fd0;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 1000px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f7ff; 
+    color: #333;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #2c7be5;
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#summaryValues {
+    padding: 0;
+    list-style: none;
+}
+
+#summaryValues li {
+    background-color: #e3f2fd; 
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #2c7be5;
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}

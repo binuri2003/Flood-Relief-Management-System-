@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="adminFrontend.css">
+</head>
+<body>
+
+<h1>Admin Panel</h1>
+
+<div class="nav">
+    <button onclick="showSection('users')">View Users</button>
+    <button onclick="showSection('reports')">View Reports</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div id="users" class="section">
+    <h2>Registered Users</h2>
+    <table>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Kamal</td>
+            <td>kamal@gmail.com</td>
+            <td>User</td>
+            <td>
+                <button onclick="confirmDelete()">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="reports" class="section" style="display:none;">
+    <h2>System Summary</h2>
+    <select id="areaFilter" onchange="loadSummary()">
+        <option value="All">All Areas</option>
+        <option value="Colombo">Colombo</option>
+        <option value="Gampaha">Gampaha</option>
+        <option value="Kalutara">Kalutara</option>
+        </select>
+
+    <select id="reliefFilter" onchange="loadSummary()">
+        <option value="Food">Food</option>
+        <option value="Medicine">Medicine</option>
+    </select>
+    
+    <ul id="summaryValues">
+        </ul>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
